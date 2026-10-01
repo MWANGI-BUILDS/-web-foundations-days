@@ -1,0 +1,189 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1f2937;
+  background: #f3f6fb;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Site header */
+header {
+  padding: 2rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  background: #253b80;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+header p {
+  margin: 0.25rem 0 1.25rem;
+  color: #dbeafe;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
+  color: #172554;
+  background: #bfdbfe;
+}
+
+main {
+  width: min(100% - 2rem, 900px);
+  margin: 2rem auto;
+}
+
+main > h2 {
+  margin-bottom: 0.35rem;
+  color: #172554;
+}
+
+main > p {
+  margin-top: 0;
+}
+
+section {
+  margin: 1.25rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgb(31 41 55 / 6%);
+}
+
+section h3 {
+  margin-top: 0;
+  color: #253b80;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  padding: 1rem;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  background: #eff6ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+}
+
+table th {
+  background: #eff6ff;
+}
+
+form p {
+  margin: 0 0 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #aebbd0;
+  border-radius: 6px;
+  color: inherit;
+  font: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3158b7;
+  outline: 3px solid #bfdbfe;
+}
+
+button {
+  padding: 0.65rem 1.1rem;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  background: #3158b7;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+button:hover,
+button:focus-visible {
+  background: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 1rem;
+  color: #526078;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1.25rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  main {
+    width: min(100% - 1.25rem, 900px);
+    margin: 1.25rem auto;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.55rem;
+  }
+}
