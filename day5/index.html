@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People directory | Day 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="users.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <p class="eyebrow">WEB FOUNDATIONS / DAY 05</p>
+      <h1>People directory</h1>
+      <p class="intro">A small directory, fetched on demand and ready to search.</p>
+    </header>
+
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="directory-heading">
+        <div>
+          <p class="section-kicker">JSONPlaceholder / USERS</p>
+          <h2 id="directory-title">Directory</h2>
+        </div>
+        <button id="load-users" type="button">Load users</button>
+      </div>
+
+      <label for="filter-input">Filter by name</label>
+      <input id="filter-input" type="search" placeholder="Try a name..." autocomplete="off">
+
+      <p id="status" role="status" aria-live="polite">Select “Load users” to fetch the directory.</p>
+      <ul id="users-list" aria-label="Users"></ul>
+    </section>
+  </main>
+</body>
+</html>
